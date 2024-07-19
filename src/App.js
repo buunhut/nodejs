@@ -111,9 +111,11 @@ const App = () => {
               <i className="fa-solid fa-desktop"></i> Font-end
             </h3>
             <ul>
+              <li>Graphic design</li>
               <li>Ui/Ux</li>
               <li>HTML5/CSS3</li>
-              <li>Graphic design</li>
+              <li>JavaScript</li>
+              <li>ReactJs</li>
             </ul>
           </div>
           <div className={visibleService ? "backend moveFX" : "fontend"}>
@@ -124,6 +126,9 @@ const App = () => {
               <li>Resfull API</li>
               <li>Websocket</li>
               <li>AWS</li>
+              <li>NestJS</li>
+              <li>Prisma</li>
+              <li>SQL, MonggoDB</li>
             </ul>
           </div>
         </div>
