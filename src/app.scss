@@ -199,7 +199,7 @@ html {
 
                 i {
                     font-size: 400px;
-                    color: aliceblue;
+                    color: rgba(240, 245, 255, 0.8);
                     animation: moveX 3s infinite;
 
                 }
@@ -591,7 +591,7 @@ html {
     }
 
     50% {
-        transform: translateX(20px);
+        transform: translateX(10px);
 
     }
 

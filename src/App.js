@@ -7,8 +7,6 @@ const App = () => {
   const [visibleService, setVisibleService] = useState(false);
   const refService = useRef(null);
 
-  console.log(visibleService);
-
   useEffect(() => {
     //lăn chuột
     const handleScroll = () => {
@@ -147,13 +145,6 @@ const App = () => {
               <i className="fa-brands fa-linkedin-in"></i>
             </div>
           </div>
-          <div className="contactItem map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15681.070715464324!2d106.6111144!3d10.7138251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752df3de1ad425%3A0x10d863fa93cb9d64!2sBlock%20A8%2C%20CC%20Ehome%203!5e0!3m2!1sen!2s!4v1721388458489!5m2!1sen!2s"
-              loading="lazy"
-              zoom="20"
-            ></iframe>
-          </div>
           <div className="contactItem">
             <p>
               <i className="fa-solid fa-house"></i>
@@ -172,6 +163,13 @@ const App = () => {
               <i className="fa-solid fa-location-dot"></i> Ho Hoc Lam, An Lac,
               Binh Tan, Ho Chi Minh
             </p>
+          </div>
+          <div className="contactItem map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15681.070715464324!2d106.6111144!3d10.7138251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752df3de1ad425%3A0x10d863fa93cb9d64!2sBlock%20A8%2C%20CC%20Ehome%203!5e0!3m2!1sen!2s!4v1721388458489!5m2!1sen!2s"
+              loading="lazy"
+              zoom="20"
+            ></iframe>
           </div>
         </div>
       </div>
