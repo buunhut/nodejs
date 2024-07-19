@@ -90,13 +90,14 @@ const App = () => {
             <h1>
               <i>nodejs.edu.vn</i>
             </h1>
-            {/* <p></p> */}
             <ul>
               <li>Web design professional</li>
               <li>Software development service</li>
             </ul>
             <button>
-              <a href="tel:+84909240886">Contact now</a>
+              <a href="tel:+84909240886">
+                <i className="fa-solid fa-phone"></i> Call me
+              </a>
             </button>
           </div>
         </div>
@@ -148,7 +149,8 @@ const App = () => {
           </div>
           <div className="contactItem">
             <p>
-              <i className="fa-solid fa-house"></i> nodejs.edu.vn
+              <i className="fa-solid fa-house"></i>
+              <a href="https://nodejs.edu.vn"> nodejs.edu.vn</a>
             </p>
 
             <p>
