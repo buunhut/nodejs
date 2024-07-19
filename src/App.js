@@ -78,7 +78,9 @@ const App = () => {
               <li>Web design professional</li>
               <li>Software development service</li>
             </ul>
-            <button>Contact now</button>
+            <button>
+              <a href="tel:+84909240886">Contact now</a>
+            </button>
           </div>
         </div>
       </div>
