@@ -14,11 +14,11 @@ const App = () => {
     const handleScroll = () => {
       const targetPositionService =
         refService.current.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight - 300; // Điều kiện có thể thay đổi tại đây
+      const screenPosition = window.innerHeight - 200; // Điều kiện có thể thay đổi tại đây
 
       if (targetPositionService < screenPosition) {
         setVisibleService(true);
-      } else if (targetPositionService >= screenPosition + 300) {
+      } else if (targetPositionService >= screenPosition + 200) {
         setVisibleService(false);
       }
     };

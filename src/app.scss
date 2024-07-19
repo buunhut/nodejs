@@ -183,7 +183,7 @@ html {
 
         .content {
             padding: 100px;
-            // height: 100vh;
+            height: calc(100vh - 80px);
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -308,15 +308,37 @@ html {
             gap: 20px;
             justify-content: space-around;
 
-            // overflow-x: hidden;
+            overflow-x: hidden;
             padding: 5px;
 
-            .fontend,
-            .backend {
 
+            .fontend {
                 width: 100%;
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                padding: 50px;
 
+                h3 {
+                    color: rgb(242, 112, 13);
+
+                    i {
+                        color: rgb(242, 112, 13);
+                    }
+                }
+
+                ul {
+                    margin: 10px 0 0 40px;
+
+                    li {
+                        color: rgb(120, 120, 120);
+                        padding: 10px 0;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .backend {
+                width: 100%;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 padding: 50px;
 
                 h3 {
@@ -340,12 +362,13 @@ html {
 
             .moveFX {
                 animation: moveFX;
-                animation-duration: 2s;
+                animation-duration: 1.5s;
             }
 
             .moveLFX {
                 animation: moveLFX;
-                animation-duration: 2s;
+                animation-duration: 1.5s;
+
             }
 
 
@@ -571,7 +594,7 @@ html {
 
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0) !important;
         opacity: 1;
 
     }
@@ -592,7 +615,7 @@ html {
 
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0) !important;
         opacity: 1;
 
     }
