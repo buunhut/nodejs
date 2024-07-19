@@ -37,9 +37,9 @@ const App = () => {
 
       //khoá scroll
 
-      document.body.style.overflowY = "hidden";
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflowY = "auto";
+      document.body.style.overflow = "auto";
     }
   }, [megaMenu]);
 
