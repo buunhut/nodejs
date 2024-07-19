@@ -66,10 +66,10 @@ const App = () => {
         </ul>
       </div>
       <div className="megaMenu" style={{ height: megaMenu ? "100vh" : "0" }}>
-        <div className="megaIcon" onClick={() => setMegaMenu(!megaMenu)}>
-          {megaMenu && <i className="fa-solid fa-xmark close opacity"></i>}
-        </div>
         <ul>
+          <li onClick={() => setMegaMenu(!megaMenu)}>
+            <i className="fa-solid fa-xmark close opacity"></i>
+          </li>
           <li onClick={() => setMegaMenu(false)}>
             <a href="#home">Home</a>
           </li>
