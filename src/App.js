@@ -7,16 +7,18 @@ const App = () => {
   const [visibleService, setVisibleService] = useState(false);
   const refService = useRef(null);
 
+  console.log(visibleService);
+
   useEffect(() => {
     //lăn chuột
     const handleScroll = () => {
       const targetPositionService =
         refService.current.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight - 200; // Điều kiện có thể thay đổi tại đây
+      const screenPosition = window.innerHeight - 100; // Điều kiện có thể thay đổi tại đây
 
       if (targetPositionService < screenPosition) {
         setVisibleService(true);
-      } else if (targetPositionService >= screenPosition + 200) {
+      } else {
         setVisibleService(false);
       }
     };
@@ -91,6 +93,7 @@ const App = () => {
             <ul>
               <li>Web design professional</li>
               <li>Software development service</li>
+              <li>Connect developer over on the world</li>
             </ul>
             <button>
               <a href="tel:+84909240886">
@@ -136,7 +139,9 @@ const App = () => {
         <div className="content">
           <div className="contactItem">
             <div className="contactIcon">
-              <i className="fa-brands fa-facebook-f"></i>
+              <a href="https://facebook.com/buunhut">
+                <i className="fa-brands fa-facebook-f"></i>
+              </a>
             </div>
             <div className="contactIcon">
               <i className="fa-brands fa-twitter"></i>
