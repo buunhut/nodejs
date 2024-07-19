@@ -528,6 +528,17 @@ html {
                 .backend {
                     padding: 20px;
                 }
+
+                .moveFX {
+                    animation: moveFX;
+                    animation-duration: 2s;
+                }
+
+                .moveLFX {
+                    animation: moveLFX;
+                    animation-duration: 2s;
+                }
+
             }
         }
 
@@ -605,7 +616,7 @@ html {
 
 
     100% {
-        transform: translateX(0) !important;
+        transform: translateX(0);
         opacity: 1;
 
     }
@@ -626,7 +637,7 @@ html {
 
 
     100% {
-        transform: translateX(0) !important;
+        transform: translateX(0);
         opacity: 1;
 
     }
