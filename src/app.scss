@@ -367,6 +367,7 @@ html {
     #contact {
         background-color: whitesmoke;
         padding: 200px 100px 100px;
+        margin-top: 100px;
 
 
         .content {
@@ -397,14 +398,23 @@ html {
                 }
 
                 p {
+                    color: rgb(35, 35, 35);
+                    padding: 10px 0;
+                    font-size: 16px;
+
                     i {
                         width: 20px;
                         text-align: center;
+                        color: rgb(120, 120, 120);
+
+
                     }
 
                     a {
                         text-decoration: none;
                         color: rgb(35, 35, 35);
+
+
                     }
                 }
             }
