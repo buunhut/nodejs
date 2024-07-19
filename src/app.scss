@@ -187,8 +187,6 @@ html {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            // justify-content: flex-end;
-            // flex-direction: column;
             gap: 20px;
             overflow-x: hidden;
 
@@ -299,6 +297,8 @@ html {
 
         h1 {
             margin: 0 auto 20px;
+            color: rgb(35, 35, 35);
+
         }
 
 
@@ -307,7 +307,6 @@ html {
             display: flex;
             gap: 20px;
             justify-content: space-around;
-
             overflow-x: hidden;
             padding: 5px;
 
@@ -362,12 +361,12 @@ html {
 
             .moveFX {
                 animation: moveFX;
-                animation-duration: 1.5s;
+                animation-duration: 3s;
             }
 
             .moveLFX {
                 animation: moveLFX;
-                animation-duration: 1.5s;
+                animation-duration: 3s;
 
             }
 
@@ -412,7 +411,7 @@ html {
                 p {
                     color: rgb(35, 35, 35);
                     padding: 10px 0;
-                    font-size: 16px;
+                    font-size: 18px;
 
                     i {
                         width: 20px;
@@ -428,6 +427,12 @@ html {
 
 
                     }
+                }
+
+                iframe {
+                    height: 302px;
+                    width: 100%;
+                    border: none;
                 }
             }
         }
@@ -539,7 +544,7 @@ html {
         }
 
         #contact {
-            padding: 100px 5px 100px;
+            padding: 100px 0px 100px;
 
             .content {
                 flex-direction: column-reverse;
@@ -547,13 +552,26 @@ html {
 
                 .contactItem {
                     width: 100%;
-                    padding: 20px;
+                    padding: 0;
 
                     &:first-child {
                         flex-direction: row;
                         justify-content: space-between;
+                        padding: 0 20px;
                     }
 
+                    p {
+                        padding: 10px 20px;
+                        font-size: 18px;
+                    }
+
+
+                }
+
+                map {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                 }
             }
         }
