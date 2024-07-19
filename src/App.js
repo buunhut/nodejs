@@ -33,7 +33,10 @@ const App = () => {
 
   useEffect(() => {
     if (megaMenu) {
+      document.body.scrollTop = 0;
+
       //khoá scroll
+
       document.body.style.overflowY = "hidden";
     } else {
       document.body.style.overflowY = "auto";
