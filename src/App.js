@@ -31,6 +31,15 @@ const App = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (megaMenu) {
+      //khoá scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [megaMenu]);
+
   return (
     <div id="container">
       <div className="menu">
