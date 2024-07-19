@@ -293,7 +293,6 @@ html {
 
     #service {
         padding: 200px 100px;
-        // overflow-x: hidden;
 
 
         h1 {
@@ -308,7 +307,6 @@ html {
             display: flex;
             gap: 20px;
             justify-content: space-around;
-            overflow-x: hidden;
             padding: 5px;
 
 
@@ -524,10 +522,7 @@ html {
             padding: 100px 5px 10px;
 
             .content {
-                // flex-direction: column;
-                // overflow: hidden;
                 flex-wrap: wrap;
-                width: 100%;
 
                 .fontend,
                 .backend {
