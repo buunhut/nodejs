@@ -447,7 +447,20 @@ html {
                 padding: 10px;
 
                 .homeIcon {
+                    // width: 100%;
+                    // height: calc(100vh - 80px);
+                    // display: flex;
+                    // align-items: center;
+
+
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
                     width: 100%;
+                    padding: 20px;
+                    transform: translateY(-50%);
+
 
                     i {
                         font-size: 300px;
@@ -456,11 +469,13 @@ html {
 
                 .homeItem {
                     position: absolute;
-                    top: 120px;
+                    top: 50%;
                     left: 0;
                     right: 0;
                     width: 100%;
                     padding: 20px;
+                    transform: translateY(-50%);
+
 
                     ul {
                         li {
