@@ -108,9 +108,9 @@ const App = () => {
         </h1>
         <div className="content">
           <div className={visibleService ? "fontend moveLFX" : "fontend"}>
-            <h3>
+            <h2>
               <i className="fa-solid fa-desktop"></i> Font-end
-            </h3>
+            </h2>
             <ul>
               <li>Graphic design</li>
               <li>Ui/Ux</li>
@@ -120,9 +120,9 @@ const App = () => {
             </ul>
           </div>
           <div className={visibleService ? "backend moveFX" : "fontend"}>
-            <h3>
+            <h2>
               <i className="fa-solid fa-gears"></i> Back-end
-            </h3>
+            </h2>
             <ul>
               <li>Resfull API</li>
               <li>Websocket</li>

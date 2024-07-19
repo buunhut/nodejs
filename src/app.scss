@@ -316,7 +316,7 @@ html {
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 padding: 50px;
 
-                h3 {
+                h2 {
                     color: rgb(242, 112, 13);
 
                     i {
@@ -340,7 +340,7 @@ html {
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 padding: 50px;
 
-                h3 {
+                h2 {
                     color: rgb(242, 112, 13);
 
                     i {
@@ -523,8 +523,9 @@ html {
             padding: 100px 5px 10px;
 
             .content {
-                flex-direction: column;
-                overflow: hidden;
+                // flex-direction: column;
+                // overflow: hidden;
+                flex-wrap: wrap;
 
                 .fontend,
                 .backend {
