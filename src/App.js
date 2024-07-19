@@ -72,6 +72,17 @@ const App = () => {
             }
           ></i>
         </div>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#service">Service</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
       <div id="home">
         <div className="content">
