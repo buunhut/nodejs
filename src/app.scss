@@ -99,8 +99,8 @@ html {
 
 
     .megaMenu {
-        position: absolute;
-        bottom: 0;
+        position: fixed;
+        top: 0;
         left: 0;
         right: 0;
         background-color: rgb(242, 112, 13);
