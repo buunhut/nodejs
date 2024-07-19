@@ -292,7 +292,7 @@ html {
 
     #service {
         padding: 200px 100px;
-        overflow-x: hidden;
+        // overflow-x: hidden;
 
 
         h1 {
@@ -361,13 +361,12 @@ html {
 
             .moveFX {
                 animation: moveFX;
-                animation-duration: 3s;
+                animation-duration: 2s;
             }
 
             .moveLFX {
                 animation: moveLFX;
-                animation-duration: 3s;
-
+                animation-duration: 2s;
             }
 
 
@@ -481,21 +480,12 @@ html {
                 justify-content: center;
 
                 .homeIcon {
-                    // width: 100%;
-                    // height: calc(100vh - 80px);
-                    // display: flex;
-                    // align-items: center;
-
-                    // background-color: teal;
-
 
                     position: absolute;
-                    // top: 50%;
                     left: 0;
                     right: 0;
                     width: 100%;
                     padding: 20px;
-                    // transform: translateY(-50%);
 
 
                     i {
@@ -505,7 +495,6 @@ html {
 
                 .homeItem {
 
-                    // background-color: red;
                     position: absolute;
                     // top: 50%;
                     left: 0;
@@ -535,10 +524,11 @@ html {
 
             .content {
                 flex-direction: column;
+                overflow: hidden;
 
                 .fontend,
                 .backend {
-                    padding: 10px;
+                    padding: 20px;
                 }
             }
         }
@@ -556,7 +546,7 @@ html {
 
                     &:first-child {
                         flex-direction: row;
-                        justify-content: space-between;
+                        justify-content: space-around;
                         padding: 0 20px;
                     }
 
