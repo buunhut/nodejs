@@ -106,6 +106,10 @@ html {
         z-index: 1999;
         height: 100vh;
         transition: all .5s;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
 
         .megaIcon {
             position: fixed;
@@ -117,6 +121,7 @@ html {
 
 
             i {
+
                 &.close {
                     color: white;
                     font-size: 20px;
@@ -125,6 +130,7 @@ html {
                 }
 
                 &.opacity {
+
                     animation: opacityX 1.2s;
                     // transition: all .5s;
 
