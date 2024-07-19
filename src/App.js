@@ -73,13 +73,13 @@ const App = () => {
           ></i>
         </div>
         <ul>
-          <li>
+          <li onClick={() => setMegaMenu(false)}>
             <a href="#home">Home</a>
           </li>
-          <li>
+          <li onClick={() => setMegaMenu(false)}>
             <a href="#service">Service</a>
           </li>
-          <li>
+          <li onClick={() => setMegaMenu(false)}>
             <a href="#contact">Contact</a>
           </li>
         </ul>
