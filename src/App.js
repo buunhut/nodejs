@@ -7,8 +7,6 @@ const App = () => {
   const [visibleService, setVisibleService] = useState(false);
   const refService = useRef(null);
 
-  console.log(visibleService);
-
   useEffect(() => {
     //lăn chuột
     const handleScroll = () => {
@@ -58,7 +56,7 @@ const App = () => {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#service">Service</a>
+            <a href="#service">Skills</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -74,7 +72,7 @@ const App = () => {
             <a href="#home">Home</a>
           </li>
           <li onClick={() => setMegaMenu(false)}>
-            <a href="#service">Service</a>
+            <a href="#service">Skills</a>
           </li>
           <li onClick={() => setMegaMenu(false)}>
             <a href="#contact">Contact</a>
@@ -105,7 +103,7 @@ const App = () => {
       </div>
       <div id="service" ref={refService}>
         <h1>
-          <i className="fa-solid fa-screwdriver-wrench"></i> Services
+          <i className="fa-solid fa-screwdriver-wrench"></i> Skills
         </h1>
         <div className="content">
           <div className={visibleService ? "fontend moveLFX" : "fontend"}>
