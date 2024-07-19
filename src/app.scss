@@ -15,7 +15,6 @@ html {
 
 #container {
 
-
     .menu {
         position: fixed;
         top: 0;
@@ -26,6 +25,8 @@ html {
         align-items: center;
         justify-content: space-between;
         background-color: rgb(35, 35, 35);
+        overflow-x: hidden;
+
 
 
 
@@ -160,6 +161,8 @@ html {
             // justify-content: flex-end;
             // flex-direction: column;
             gap: 20px;
+            overflow-x: hidden;
+
 
             .homeIcon {
                 display: flex;
@@ -273,6 +276,8 @@ html {
 
     #service {
         padding: 200px 100px;
+        overflow-x: hidden;
+
 
         h1 {
             margin: 0 auto 20px;
@@ -285,6 +290,8 @@ html {
             gap: 20px;
             justify-content: space-around;
 
+            // overflow-x: hidden;
+            padding: 5px;
 
             .fontend,
             .backend {
@@ -336,6 +343,8 @@ html {
             gap: 20px;
             align-items: center;
             justify-content: space-around;
+            overflow-x: hidden;
+
 
             .contactItem {
                 display: flex;
