@@ -429,7 +429,7 @@ html {
 
                 iframe {
                     height: 302px;
-                    width: 100%;
+                    width: 604px;
                     border: none;
                 }
             }
@@ -552,6 +552,11 @@ html {
                         padding: 10px 20px;
                         font-size: 18px;
                     }
+
+                    iframe {
+                        width: 100%;
+                    }
+
 
 
                 }
