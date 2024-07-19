@@ -65,7 +65,7 @@ const App = () => {
           </li>
         </ul>
       </div>
-      <div className="megaMenu" style={{ height: megaMenu ? "100vh" : "0" }}>
+      <div className="megaMenu" style={{ height: megaMenu ? "100vh" : 0 }}>
         <ul>
           <li onClick={() => setMegaMenu(!megaMenu)}>
             <i className="fa-solid fa-xmark close opacity"></i>
