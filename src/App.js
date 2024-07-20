@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./app.scss";
+import FormContact from "./components/FormContact";
 
 const App = () => {
   const [megaMenu, setMegaMenu] = useState(false);
@@ -136,26 +137,7 @@ const App = () => {
         </div>
       </div>
       <div id="contact">
-        <div className="content">
-          <form action="">
-            <h2>Contact me</h2>
-
-            <div className="inputItem">
-              <input type="text" placeholder="Your name" />
-              <i className="fa-solid fa-user"></i>
-            </div>
-            <div className="inputItem">
-              <input type="text" placeholder="Your e-mail" />
-              <i className="fa-solid fa-envelope"></i>
-            </div>
-            <div className="inputItem">
-              <textarea placeholder="Text message" />
-            </div>
-            <button type="button">
-              <i className="fa-solid fa-paper-plane"></i> Send
-            </button>
-          </form>
-        </div>
+        <FormContact />
         <div className="content">
           <div className="contactItem">
             <div className="contactIcon">
