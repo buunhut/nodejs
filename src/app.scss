@@ -294,7 +294,10 @@ html {
 
 
     #service {
-        padding: 200px 100px;
+        margin-top: 100px;
+        padding: 100px 100px;
+        background-color: rgb(255, 252, 252);
+
 
 
         h1 {
@@ -307,13 +310,14 @@ html {
 
         .content {
             display: flex;
-            gap: 20px;
-            justify-content: space-around;
-            padding: 5px;
+            gap: 40px;
+            // justify-content: space-around;
+            // padding: 5px;
 
 
             .fontend {
                 width: 100%;
+                background-color: white;
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 padding: 50px;
 
@@ -338,6 +342,8 @@ html {
 
             .backend {
                 width: 100%;
+                background-color: white;
+
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 padding: 50px;
 
@@ -376,16 +382,14 @@ html {
     }
 
     #contact {
-        background-color: whitesmoke;
         padding: 200px 100px 100px;
-        margin-top: 100px;
 
 
         .content {
             display: flex;
             gap: 20px;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             overflow-x: hidden;
 
 
@@ -441,6 +445,22 @@ html {
                 }
             }
         }
+    }
+
+    footer {
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background-color: rgb(35, 35, 35);
+        color: rgb(120, 120, 120);
+
+        a {
+            text-decoration: none;
+            color: rgb(120, 120, 120);
+
+        }
+
+
     }
 }
 
@@ -526,10 +546,11 @@ html {
         }
 
         #service {
-            padding: 100px 5px 10px;
+            padding: 100px 5px 100px;
 
             .content {
                 flex-wrap: wrap;
+                gap: 10px;
 
                 .fontend,
                 .backend {

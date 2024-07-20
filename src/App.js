@@ -89,8 +89,9 @@ const App = () => {
               <i>nodejs.edu.vn</i>
             </h1>
             <ul>
-              <li>Web design professional</li>
+              <li>Web design professional service</li>
               <li>Software development service</li>
+              <li>Working as a freelance developer</li>
               <li>Connect developer over on the world</li>
             </ul>
             <button>
@@ -111,11 +112,12 @@ const App = () => {
               <i className="fa-solid fa-desktop"></i> Font-end
             </h2>
             <ul>
-              <li>Graphic design</li>
-              <li>Ui/Ux</li>
+              <li>UI/UX</li>
               <li>HTML5/CSS3</li>
               <li>JavaScript</li>
               <li>ReactJs</li>
+              <li>Redux/@reduxjs/toolkit</li>
+              <li>Axios</li>
             </ul>
           </div>
           <div className={visibleService ? "backend moveFX" : "fontend"}>
@@ -125,10 +127,10 @@ const App = () => {
             <ul>
               <li>Resfull API</li>
               <li>Websocket</li>
-              <li>AWS</li>
               <li>NestJS</li>
+              <li>JWT</li>
               <li>Prisma</li>
-              <li>SQL, MonggoDB</li>
+              <li>MySQL</li>
             </ul>
           </div>
         </div>
@@ -142,10 +144,12 @@ const App = () => {
               </a>
             </div>
             <div className="contactIcon">
-              <i className="fa-brands fa-twitter"></i>
+              <a href="https://www.youtube.com/@zerok3706">
+                <i className="fa-brands fa-youtube"></i>
+              </a>
             </div>
             <div className="contactIcon">
-              <i className="fa-brands fa-linkedin-in"></i>
+              <i className="fa-brands fa-twitter"></i>
             </div>
           </div>
           <div className="contactItem">
@@ -176,6 +180,11 @@ const App = () => {
           </div>
         </div>
       </div>
+      <footer>
+        <span>
+          <a href="https://nodejs.edu.vn">nodejs.edu.vn</a> - Copyright 2024
+        </span>
+      </footer>
     </div>
   );
 };
