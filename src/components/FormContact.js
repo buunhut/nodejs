@@ -144,8 +144,8 @@ const FormContact = () => {
         >
           {finish ? (
             <p>
-              Sent, thank you for contact me. I will reply you as soon as
-              possible
+              Sent, <br></br>Thank you for contact me. <br></br>I will reply you
+              as soon as possible
             </p>
           ) : (
             <p>Sending...</p>
