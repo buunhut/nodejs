@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import * as moment from "moment";
+import axios from "axios";
 
 const FormContact = () => {
   const [info, setInfo] = useState({
@@ -11,6 +13,31 @@ const FormContact = () => {
     yourEmail: "",
     textMessage: "",
   });
+
+  const postData = async (data) => {
+    await axios({
+      method: "post",
+      url: "https://api.nodejs.edu.vn/nodejs",
+      data,
+    })
+      .then((res) => {
+        if (res.data.statusCode === 200) {
+          setProcess(true);
+          setTimeout(() => {
+            setInfo({
+              yourName: "",
+              yourEmail: "",
+              textMessage: "",
+            });
+            setFinish(true);
+          }, 2000);
+          return res.data;
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   const [process, setProcess] = useState(false);
 
@@ -41,15 +68,15 @@ const FormContact = () => {
     }
 
     if (isValid) {
-      setProcess(true);
-      setTimeout(() => {
-        setInfo({
-          yourName: "",
-          yourEmail: "",
-          textMessage: "",
-        });
-        setFinish(true);
-      }, 2000);
+      const contactTime = moment().utc().toISOString();
+      //   console.log(contactTime);
+
+      const data = {
+        contactTime,
+        ...info,
+      };
+
+      postData(data);
     }
   };
 
@@ -58,7 +85,7 @@ const FormContact = () => {
       setTimeout(() => {
         setProcess(false);
         setFinish(false);
-      }, 2000);
+      }, 3000);
     }
   }, [finish]);
 
@@ -115,7 +142,14 @@ const FormContact = () => {
           //     setFinish(false);
           //   }}
         >
-          {finish ? <p>Sent, thank you for contact me.</p> : <p>Sending...</p>}
+          {finish ? (
+            <p>
+              Sent, thank you for contact me. I will reply you as soon as
+              possible
+            </p>
+          ) : (
+            <p>Sending...</p>
+          )}
         </div>
       )}
     </>
