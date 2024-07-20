@@ -47,7 +47,7 @@ const FormContact = () => {
           textMessage: "",
         });
         setProcess(false);
-      }, 2000);
+      }, 1000);
     }
   };
   return (
@@ -97,7 +97,7 @@ const FormContact = () => {
 
       {process && (
         <div className="overlay">
-          <p>Sending...,</p>
+          <p>Sending...</p>
         </div>
       )}
     </>
