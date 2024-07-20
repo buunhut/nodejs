@@ -137,6 +137,26 @@ const App = () => {
       </div>
       <div id="contact">
         <div className="content">
+          <form action="">
+            <h2>Contact me</h2>
+
+            <div className="inputItem">
+              <input type="text" placeholder="Your name" />
+              <i className="fa-solid fa-user"></i>
+            </div>
+            <div className="inputItem">
+              <input type="text" placeholder="Your e-mail" />
+              <i className="fa-solid fa-envelope"></i>
+            </div>
+            <div className="inputItem">
+              <textarea />
+            </div>
+            <button type="button">
+              <i className="fa-solid fa-paper-plane"></i> Send
+            </button>
+          </form>
+        </div>
+        <div className="content">
           <div className="contactItem">
             <div className="contactIcon">
               <a href="https://facebook.com/buunhut">
