@@ -149,7 +149,7 @@ const App = () => {
               <i className="fa-solid fa-envelope"></i>
             </div>
             <div className="inputItem">
-              <textarea />
+              <textarea placeholder="Text message" />
             </div>
             <button type="button">
               <i className="fa-solid fa-paper-plane"></i> Send
