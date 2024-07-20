@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const FormContact = () => {
   const [info, setInfo] = useState({
@@ -13,6 +13,8 @@ const FormContact = () => {
   });
 
   const [process, setProcess] = useState(false);
+
+  const [finish, setFinish] = useState(false);
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -46,10 +48,20 @@ const FormContact = () => {
           yourEmail: "",
           textMessage: "",
         });
-        setProcess(false);
-      }, 1000);
+        setFinish(true);
+      }, 2000);
     }
   };
+
+  useEffect(() => {
+    if (finish) {
+      setTimeout(() => {
+        setProcess(false);
+        setFinish(false);
+      }, 2000);
+    }
+  }, [finish]);
+
   return (
     <>
       <div className="content">
@@ -96,8 +108,14 @@ const FormContact = () => {
       </div>
 
       {process && (
-        <div className="overlay">
-          <p>Sending...</p>
+        <div
+          className="overlay"
+          //   onClick={() => {
+          //     setProcess(false);
+          //     setFinish(false);
+          //   }}
+        >
+          {finish ? <p>Sent, thank you for contact me.</p> : <p>Sending...</p>}
         </div>
       )}
     </>
