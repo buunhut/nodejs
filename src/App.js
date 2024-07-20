@@ -93,7 +93,7 @@ const App = () => {
               <li>Web design professional service</li>
               <li>Software development service</li>
               <li>Working as a freelance developer</li>
-              <li>Connect developer over on the world</li>
+              <li>Support new developer has trouble</li>
             </ul>
             <button>
               <a href="tel:+84909240886">
