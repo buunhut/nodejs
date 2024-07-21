@@ -990,12 +990,16 @@ html {
     }
 
     25% {
-        opacity: .25;
+        opacity: .7;
         scale: 1.1;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+
     }
 
     50% {
-        opacity: .5;
+        opacity: .25;
         scale: .5;
     }
 
