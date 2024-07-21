@@ -433,7 +433,9 @@ html {
                 }
 
                 p {
-                    color: rgb(120, 120, 120);
+                    // color: rgb(120, 120, 120);
+                    color: rgb(200, 200, 200);
+
                 }
 
                 .button {
@@ -446,15 +448,17 @@ html {
                         // width: 20px;
                         text-align: center;
                         color: rgb(120, 120, 120);
-                        transition: all .2s;
-                        width: 38px;
-                        height: 38px;
-                        line-height: 38px;
+                        transition: all .3s;
+                        width: 36px;
+                        height: 36px;
+                        line-height: 36px;
                         background-color: rgb(255, 255, 255);
                         border-radius: 50%;
 
                         &:hover {
                             color: red;
+                            // background-color: rgb(230, 230, 230);
+
                             // scale: 1.2;
                         }
                     }
@@ -477,6 +481,11 @@ html {
 
             &:hover {
                 background-color: red;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
             }
         }
 

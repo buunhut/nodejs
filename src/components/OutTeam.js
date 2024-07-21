@@ -70,7 +70,9 @@ const OutTeam = () => {
         </div>
       </div>
       <button type="button">
-        <i className="fa-solid fa-handshake"></i> Join to us
+        <a href="tel:+84909240886">
+          <i className="fa-solid fa-handshake"></i> Join to us
+        </a>
       </button>
     </div>
   );
