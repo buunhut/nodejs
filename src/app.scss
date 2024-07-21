@@ -386,6 +386,8 @@ html {
 
         h1 {
             margin-bottom: 30px;
+            color: rgb(35, 35, 35);
+
         }
 
         .content {
@@ -407,6 +409,7 @@ html {
                 background-color: whitesmoke;
                 // cursor: pointer;
                 transition: all .5s;
+
 
                 &:hover {
                     scale: 1.1;
@@ -665,6 +668,11 @@ html {
             padding: 0 20px;
             text-align: center;
         }
+
+    }
+
+    .scaleX {
+        animation: scaleX 5s;
 
     }
 }
@@ -964,6 +972,31 @@ html {
 
     50% {
         opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+
+
+}
+
+@keyframes scaleX {
+    0% {
+        opacity: 0;
+        scale: .0;
+
+    }
+
+    25% {
+        opacity: .25;
+        scale: 1.1;
+    }
+
+    50% {
+        opacity: .5;
+        scale: .5;
     }
 
     100% {

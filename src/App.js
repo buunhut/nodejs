@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./app.scss";
-import FormContact from "./components/FormContact";
 import Service from "./components/Service";
 import Contact from "./components/Contact";
+import OutTeam from "./components/OutTeam";
 
 const App = () => {
   const [megaMenu, setMegaMenu] = useState(false);
@@ -87,54 +87,7 @@ const App = () => {
         </div>
       </div>
       <Service />
-      <div id="ourTeam">
-        <h1>
-          <i className="fa-solid fa-users"></i> Our teams
-        </h1>
-        <div className="content">
-          <div className="team">
-            <img src="./img/nhut.jpg" alt="hình" />
-            <h3>Trương Bửu Nhựt</h3>
-            <p>Web developer</p>
-            <div className="button">
-              <a href="https://facebook.com/buunhut">
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="https://github.com/buunhut">
-                <i className="fa-brands fa-github"></i>
-              </a>
-              <a href="mailto:nhut.nta@gmail.com">
-                <i className="fa-solid fa-envelope"></i>
-              </a>
-              <a href="tel:+84909240886">
-                <i className="fa-solid fa-phone"></i>
-              </a>
-            </div>
-          </div>
-          <div className="team">
-            <img src="./img/tan.jpg" alt="hình" />
-            <h3>Nguyễn Đức Tấn</h3>
-            <p>Web developer</p>
-            <div className="button">
-              <a href="https://facebook.com/nguyen.duc.tan998">
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="https://github.com/ductandev">
-                <i className="fa-brands fa-github"></i>
-              </a>
-              <a href="mailto:nguyenductan998@gmail.com">
-                <i className="fa-solid fa-envelope"></i>
-              </a>
-              <a href="tel:+84931238660">
-                <i className="fa-solid fa-phone"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <button type="button">
-          <i className="fa-solid fa-handshake"></i> Join to us
-        </button>
-      </div>
+      <OutTeam />
       {/* <div id="video">
         <video autoPlay controls muted>
           <source src="./img/video.mp4" type="video/mp4" />
