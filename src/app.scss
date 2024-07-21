@@ -438,15 +438,20 @@ html {
 
                 .button {
                     display: flex;
-                    gap: 20px;
+                    gap: 10px;
                     align-items: center;
                     justify-content: center;
 
                     i {
-                        width: 20px;
+                        // width: 20px;
                         text-align: center;
                         color: rgb(120, 120, 120);
                         transition: all .2s;
+                        width: 38px;
+                        height: 38px;
+                        line-height: 38px;
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 50%;
 
                         &:hover {
                             color: red;
@@ -672,7 +677,7 @@ html {
     }
 
     .scaleX {
-        animation: scaleX 5s;
+        animation: scaleX 3s;
 
     }
 }
@@ -994,8 +999,6 @@ html {
         scale: 1.1;
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
-
     }
 
     50% {
@@ -1005,6 +1008,8 @@ html {
 
     100% {
         opacity: 1;
+        scale: 1;
+
     }
 
 
