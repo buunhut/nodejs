@@ -56,6 +56,9 @@ const App = () => {
             <a href="#service">Skills</a>
           </li>
           <li onClick={() => setMegaMenu(false)}>
+            <a href="#ourTeam">Our Teams</a>
+          </li>
+          <li onClick={() => setMegaMenu(false)}>
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -94,16 +97,16 @@ const App = () => {
             <h3>Trương Bửu Nhựt</h3>
             <p>Web developer</p>
             <div className="button">
-              <a href="">
+              <a href="https://facebook.com/buunhut">
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
-              <a href="">
+              <a href="https://github.com/buunhut">
                 <i className="fa-brands fa-github"></i>
               </a>
-              <a href="mailto:">
+              <a href="mailto:nhut.nta@gmail.com">
                 <i className="fa-solid fa-envelope"></i>
               </a>
-              <a href="tel:+">
+              <a href="tel:+84909240886">
                 <i className="fa-solid fa-phone"></i>
               </a>
             </div>
@@ -113,16 +116,16 @@ const App = () => {
             <h3>Nguyễn Đức Tấn</h3>
             <p>Web developer</p>
             <div className="button">
-              <a href="">
+              <a href="https://facebook.com/nguyen.duc.tan998">
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
-              <a href="">
+              <a href="https://github.com/ductandev">
                 <i className="fa-brands fa-github"></i>
               </a>
-              <a href="mailto:">
+              <a href="mailto:nguyenductan998@gmail.com">
                 <i className="fa-solid fa-envelope"></i>
               </a>
-              <a href="tel:+">
+              <a href="tel:+84931238660">
                 <i className="fa-solid fa-phone"></i>
               </a>
             </div>
