@@ -1,34 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./app.scss";
 import FormContact from "./components/FormContact";
+import Service from "./components/Service";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [megaMenu, setMegaMenu] = useState(false);
-
-  const [visibleService, setVisibleService] = useState(false);
-  const refService = useRef(null);
-
-  useEffect(() => {
-    //lăn chuột
-    const handleScroll = () => {
-      const targetPositionService =
-        refService.current.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight - 100; // Điều kiện có thể thay đổi tại đây
-
-      if (targetPositionService < screenPosition) {
-        setVisibleService(true);
-      } else {
-        setVisibleService(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   useEffect(() => {
     if (megaMenu) {
@@ -58,6 +35,9 @@ const App = () => {
           </li>
           <li>
             <a href="#service">Skills</a>
+          </li>
+          <li>
+            <a href="#ourTeam">Our Teams</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -103,85 +83,61 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div id="service" ref={refService}>
+      <Service />
+      <div id="ourTeam">
         <h1>
-          <i className="fa-solid fa-screwdriver-wrench"></i> Skills
+          <i className="fa-solid fa-users"></i> Our teams
         </h1>
         <div className="content">
-          <div className={visibleService ? "fontend moveLFX" : "fontend"}>
-            <h2>
-              <i className="fa-solid fa-desktop"></i> Font-end
-            </h2>
-            <ul>
-              <li>UI/UX</li>
-              <li>HTML5/CSS3</li>
-              <li>JavaScript</li>
-              <li>ReactJs</li>
-              <li>Redux/@reduxjs/toolkit</li>
-              <li>Axios</li>
-            </ul>
-          </div>
-          <div className={visibleService ? "backend moveFX" : "fontend"}>
-            <h2>
-              <i className="fa-solid fa-gears"></i> Back-end
-            </h2>
-            <ul>
-              <li>Resfull API</li>
-              <li>Websocket</li>
-              <li>NestJS</li>
-              <li>JWT</li>
-              <li>Prisma</li>
-              <li>MySQL</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="contact">
-        <FormContact />
-        <div className="content">
-          <div className="contactItem">
-            <div className="contactIcon">
-              <a href="https://facebook.com/buunhut">
+          <div className="team">
+            <img src="./img/nhut.jpg" alt="hình" />
+            <h3>Trương Bửu Nhựt</h3>
+            <p>Web developer</p>
+            <div className="button">
+              <a href="">
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
-            </div>
-            <div className="contactIcon">
-              <a href="https://www.youtube.com/@zerok3706">
-                <i className="fa-brands fa-youtube"></i>
+              <a href="">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:">
+                <i className="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+">
+                <i className="fa-solid fa-phone"></i>
               </a>
             </div>
-            <div className="contactIcon">
-              <i className="fa-brands fa-twitter"></i>
+          </div>
+          <div className="team">
+            <img src="./img/tan.jpg" alt="hình" />
+            <h3>Nguyễn Đức Tấn</h3>
+            <p>Web developer</p>
+            <div className="button">
+              <a href="">
+                <i className="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:">
+                <i className="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+">
+                <i className="fa-solid fa-phone"></i>
+              </a>
             </div>
           </div>
-          <div className="contactItem">
-            <p>
-              <i className="fa-solid fa-house"></i>
-              <a href="https://nodejs.edu.vn"> nodejs.edu.vn</a>
-            </p>
-
-            <p>
-              <i className="fa-solid fa-envelope"></i>{" "}
-              <a href="mailto:nhut.nta@gmail.com">nhut.nta@gmail.com</a>
-            </p>
-            <p>
-              <i className="fa-solid fa-phone"></i>{" "}
-              <a href="tel:+84909240886">(+84) 909 240 886</a>
-            </p>
-            <p>
-              <i className="fa-solid fa-location-dot"></i> Ho Hoc Lam, An Lac,
-              Binh Tan, Ho Chi Minh
-            </p>
-          </div>
-          <div className="contactItem map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15681.070715464324!2d106.6111144!3d10.7138251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752df3de1ad425%3A0x10d863fa93cb9d64!2sBlock%20A8%2C%20CC%20Ehome%203!5e0!3m2!1sen!2s!4v1721388458489!5m2!1sen!2s"
-              loading="lazy"
-              zoom="20"
-            ></iframe>
-          </div>
         </div>
+        <button type="button">
+          <i className="fa-solid fa-handshake"></i> Join to us
+        </button>
       </div>
+      {/* <div id="video">
+        <video autoPlay controls muted>
+          <source src="./img/video.mp4" type="video/mp4" />
+        </video>
+      </div> */}
+      <Contact />
       <footer>
         <span>
           <a href="https://nodejs.edu.vn">nodejs.edu.vn</a> - Copyright 2024
