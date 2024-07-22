@@ -135,6 +135,26 @@ html {
             // transition: all .5s;
         }
 
+        button {
+            border: none;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            // line-height: 30px;
+            position: fixed;
+            top: 25px;
+            right: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: transparent;
+
+            i {
+                font-size: 20px;
+                color: rgb(242, 112, 13);
+            }
+        }
+
+
         ul {
             display: flex;
             gap: 30px;
@@ -173,24 +193,6 @@ html {
 
             }
 
-            button {
-                border: none;
-                width: 30px;
-                height: 30px;
-                text-align: center;
-                // line-height: 30px;
-                position: fixed;
-                top: 25px;
-                right: 15px;
-                border-radius: 50%;
-                cursor: pointer;
-                background-color: transparent;
-
-                i {
-                    font-size: 20px;
-                    color: rgb(242, 112, 13);
-                }
-            }
         }
     }
 

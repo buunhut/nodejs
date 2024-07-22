@@ -44,6 +44,10 @@ const App = () => {
           ></i>
         </div>
         <div className="circle"></div>
+        <button type="button" onClick={handleDarkTheme}>
+          <i className={dark ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>
+        </button>
+
         <ul>
           <li>
             <a href="#home">Home</a>
@@ -57,9 +61,6 @@ const App = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <button type="button" onClick={handleDarkTheme}>
-            <i className={dark ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>
-          </button>
         </ul>
       </div>
       <div
