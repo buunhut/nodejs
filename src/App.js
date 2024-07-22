@@ -8,6 +8,10 @@ import BackToTop from "./components/BackToTop";
 const App = () => {
   const [megaMenu, setMegaMenu] = useState(false);
 
+  const [dark, setDark] = useState(false);
+
+  console.log(dark);
+
   useEffect(() => {
     if (megaMenu) {
       document.body.scrollTop = 0;
@@ -20,8 +24,18 @@ const App = () => {
     }
   }, [megaMenu]);
 
+  useEffect(() => {
+    const theme = JSON.parse(localStorage.getItem("theme"));
+    setDark(theme);
+  }, []);
+
+  const handleDarkTheme = () => {
+    localStorage.setItem("theme", !dark);
+    setDark(!dark);
+  };
+
   return (
-    <div id="container">
+    <div id="container" className={dark ? "dark" : null}>
       <div className="menu">
         <div className="icon">
           <i
@@ -43,6 +57,9 @@ const App = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
+          <button type="button" onClick={handleDarkTheme}>
+            <i className={dark ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>
+          </button>
         </ul>
       </div>
       <div

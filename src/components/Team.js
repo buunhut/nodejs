@@ -8,8 +8,6 @@ const Team = ({ item, index }) => {
 
   const check = index / 2;
 
-  console.log(check);
-
   useEffect(() => {
     //lăn chuột
     const handleScroll = () => {

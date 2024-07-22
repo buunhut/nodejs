@@ -10,11 +10,88 @@ html {
 }
 
 
+#container.dark {
+    background-color: rgb(50, 50, 50);
 
 
+    #service {
+        h1 {
+            color: rgb(235, 235, 235);
+        }
+
+        background-color: rgb(45, 45, 45);
+
+        .content {
+
+            .fontend,
+            .backend {
+                background-color: rgb(45, 45, 45);
+                box-shadow: none;
+
+                .bgc {
+                    i {
+                        color: rgb(60, 60, 60);
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    #ourTeam {
+        h1 {
+            color: rgb(235, 235, 235);
+        }
+
+        .content {
+            .team {
+                background-color: rgb(60, 60, 60);
+            }
+        }
+
+
+    }
+
+    #contact {
+
+        .content {
+            .contactItem {
+                p {
+                    color: rgb(235, 235, 235);
+
+                    a {
+                        color: rgb(235, 235, 235);
+                    }
+                }
+            }
+
+            form {
+                .inputItem {
+                    input {
+                        background-color: transparent;
+                        color: rgb(235, 235, 235);
+
+                    }
+
+                    textarea {
+                        background-color: transparent;
+                        color: rgb(235, 235, 235);
+                    }
+
+                }
+            }
+        }
+    }
+
+}
 
 #container {
     overflow-x: hidden;
+
+
+
+
 
     .menu {
         position: fixed;
@@ -61,7 +138,7 @@ html {
         ul {
             display: flex;
             gap: 30px;
-            margin-right: 50px;
+            margin-right: 80px;
 
             li {
                 list-style: none;
@@ -94,6 +171,24 @@ html {
                 }
 
 
+            }
+
+            button {
+                border: none;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                // line-height: 30px;
+                position: fixed;
+                top: 25px;
+                right: 15px;
+                border-radius: 50%;
+                cursor: pointer;
+
+                i {
+                    font-size: 20px;
+                    color: rgb(242, 112, 13);
+                }
             }
         }
     }
