@@ -47,8 +47,23 @@ html {
         .content {
             .team {
                 background-color: rgb(60, 60, 60);
+
+                .button {
+                    i {
+                        background-color: rgb(45, 45, 45);
+
+                        &:hover {
+                            color: white;
+                        }
+
+                    }
+
+
+                }
+
             }
         }
+
 
 
     }
