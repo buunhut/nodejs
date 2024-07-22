@@ -44,11 +44,20 @@ const App = () => {
           </li>
         </ul>
       </div>
-      <div className="megaMenu" style={{ height: megaMenu ? "100vh" : 0 }}>
-        <ul>
-          <li onClick={() => setMegaMenu(!megaMenu)}>
-            <i className="fa-solid fa-xmark close opacity"></i>
-          </li>
+      <div
+        className="megaMenu"
+        style={{ transform: megaMenu ? "translateY(0)" : null }}
+      >
+        <div className="megaIcon" onClick={() => setMegaMenu(!megaMenu)}>
+          <i
+            className={
+              megaMenu
+                ? "fa-solid fa-xmark close opacity"
+                : "fa-solid fa-xmark close"
+            }
+          ></i>
+        </div>
+        <ul className={megaMenu ? "opacity" : null}>
           <li onClick={() => setMegaMenu(false)}>
             <a href="#home">Home</a>
           </li>

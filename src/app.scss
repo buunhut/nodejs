@@ -37,7 +37,7 @@ html {
             left: 40px;
             // width: 100%;
             z-index: 2000;
-            display: none;
+            // display: none;
 
             i {
                 color: white;
@@ -104,10 +104,12 @@ html {
         top: 0;
         left: 0;
         right: 0;
+        bottom: 0;
         background-color: rgb(242, 112, 13);
         z-index: 1999;
-        // height: 100vh;
+        height: 100vh;
         transition: all .5s;
+        transform: translateY(100%);
         // display: flex;
         // align-items: center;
         // justify-content: center;
@@ -126,23 +128,25 @@ html {
 
                 &.close {
                     color: white;
-                    font-size: 20px;
+                    font-size: 22px;
 
 
                 }
 
                 &.opacity {
-
-                    animation: opacityX 1.2s;
-                    // transition: all .5s;
+                    animation: opacityX 2s;
 
                 }
             }
         }
 
         ul {
-            margin-top: 27px;
-            display: none;
+            margin-top: 60px;
+            // display: none;
+
+            &.opacity {
+                animation: opacityX 1s;
+            }
 
             li {
                 margin-left: 40px;
