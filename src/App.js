@@ -98,7 +98,7 @@ const App = () => {
           </div>
           <div className="homeItem">
             <h1>
-              <i>nodejs.edu.vn</i>
+              <i>nodejs</i>
             </h1>
             <ul>
               <li>Web design professional service</li>

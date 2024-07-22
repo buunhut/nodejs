@@ -14,6 +14,19 @@ html {
     background-color: rgb(50, 50, 50);
 
 
+    #home {
+        .content {
+            .homeItem {
+                ul {
+                    li {
+                        color: rgb(235, 235, 235);
+                    }
+                }
+            }
+        }
+    }
+
+
     #service {
         h1 {
             color: rgb(235, 235, 235);
@@ -27,6 +40,15 @@ html {
             .backend {
                 background-color: rgb(45, 45, 45);
                 box-shadow: none;
+
+                ul {
+                    li {
+                        color: rgb(235, 235, 235);
+                    }
+                }
+
+
+
 
                 .bgc {
                     i {
@@ -164,7 +186,7 @@ html {
             background-color: transparent;
 
             i {
-                font-size: 20px;
+                font-size: 22px;
                 color: rgb(242, 112, 13);
             }
         }
@@ -307,6 +329,7 @@ html {
             justify-content: space-around;
             gap: 20px;
             overflow-x: hidden;
+            flex-wrap: wrap;
 
 
             .homeIcon {
@@ -342,8 +365,7 @@ html {
                     color: rgb(242, 112, 13);
 
                     i {
-                        font-size: 120px;
-
+                        font-size: 100px;
                     }
 
                 }
@@ -428,6 +450,7 @@ html {
         .content {
             display: flex;
             gap: 40px;
+            flex-wrap: wrap;
             // justify-content: space-around;
             // padding: 5px;
 
