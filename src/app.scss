@@ -982,29 +982,21 @@ html {
 
     // }
 
-    // 0% {
-    //     opacity: .7;
-    //     scale: 1.1;
-    //     border-radius: 20px;
-    //     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    // }
-
     0% {
-        opacity: .1;
-        scale: .5;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
-
-    }
-
-    50% {
-        opacity: .6;
+        opacity: .7;
         scale: 1.1;
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
+    50% {
+        opacity: .1;
+        scale: .2;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+
+    }
 
     100% {
         opacity: 1;
