@@ -97,11 +97,6 @@ const App = () => {
       </div>
       <Service />
       <OutTeam />
-      {/* <div id="video">
-        <video autoPlay controls muted>
-          <source src="./img/video.mp4" type="video/mp4" />
-        </video>
-      </div> */}
       <Contact />
       <footer>
         <span>

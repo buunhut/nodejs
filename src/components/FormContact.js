@@ -93,7 +93,7 @@ const FormContact = () => {
     <>
       <div className="content">
         <form action="">
-          <h2>Contact me</h2>
+          <h2>Contact</h2>
           <div className="inputItem">
             <input
               type="text"
@@ -135,13 +135,7 @@ const FormContact = () => {
       </div>
 
       {process && (
-        <div
-          className="overlay"
-          //   onClick={() => {
-          //     setProcess(false);
-          //     setFinish(false);
-          //   }}
-        >
+        <div className="overlay">
           {finish ? (
             <p>
               Sent, <br></br>Thank you for contact me. <br></br>I will reply you

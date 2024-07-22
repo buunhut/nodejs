@@ -43,6 +43,9 @@ const Service = () => {
             <li>Redux/@reduxjs/toolkit</li>
             <li>Axios</li>
           </ul>
+          <div className="bgc">
+            <i className="fa-solid fa-display"></i>
+          </div>
         </div>
         <div className={visibleService ? "backend moveFX" : "fontend"}>
           <h2>
@@ -56,6 +59,9 @@ const Service = () => {
             <li>Prisma</li>
             <li>MySQL</li>
           </ul>
+          <div className="bgc">
+            <i className="fa-solid fa-gears"></i>
+          </div>
         </div>
       </div>
     </div>

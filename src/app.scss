@@ -324,9 +324,13 @@ html {
                 background-color: white;
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 padding: 50px;
+                position: relative;
 
                 h2 {
                     color: rgb(242, 112, 13);
+                    position: relative;
+                    z-index: 2;
+
 
                     i {
                         color: rgb(242, 112, 13);
@@ -335,6 +339,8 @@ html {
 
                 ul {
                     margin: 10px 0 0 40px;
+                    position: relative;
+                    z-index: 2;
 
                     li {
                         color: rgb(120, 120, 120);
@@ -342,6 +348,28 @@ html {
                         font-size: 18px;
                     }
                 }
+
+                .bgc {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    padding: 20px;
+                    z-index: 1;
+
+                    i {
+                        color: rgb(250, 250, 250);
+                        font-size: 280px;
+                        animation: moveX 3s infinite;
+
+                    }
+                }
+
             }
 
             .backend {
@@ -351,8 +379,13 @@ html {
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 padding: 50px;
 
+                position: relative;
+
                 h2 {
                     color: rgb(242, 112, 13);
+                    position: relative;
+                    z-index: 2;
+
 
                     i {
                         color: rgb(242, 112, 13);
@@ -361,11 +394,36 @@ html {
 
                 ul {
                     margin: 10px 0 0 40px;
+                    position: relative;
+                    z-index: 2;
+
 
                     li {
                         color: rgb(120, 120, 120);
                         padding: 10px 0;
                         font-size: 18px;
+                    }
+                }
+
+                .bgc {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    padding: 20px;
+                    z-index: 1;
+
+                    i {
+                        color: rgb(250, 250, 250);
+                        font-size: 280px;
+                        animation: moveX 3s infinite;
+
+
                     }
                 }
             }
@@ -889,11 +947,11 @@ html {
 
     }
 
-    50% {
-        transform: translateX(100%);
-        opacity: 0;
+    // 50% {
+    //     transform: translateX(50%);
+    //     opacity: .5;
 
-    }
+    // }
 
 
     100% {
@@ -910,11 +968,11 @@ html {
 
     }
 
-    50% {
-        transform: translateX(-100%);
-        opacity: 0;
+    // 50% {
+    //     transform: translateX(-50%);
+    //     opacity: .5;
 
-    }
+    // }
 
 
     100% {
