@@ -10,7 +10,7 @@ const Team = ({ item }) => {
     //lăn chuột
     const handleScroll = () => {
       const targetPosition = ref.current.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight - 300; // Điều kiện có thể thay đổi tại đây
+      const screenPosition = window.innerHeight - 500; // Điều kiện có thể thay đổi tại đây
 
       if (targetPosition < screenPosition) {
         setVisible(true);
