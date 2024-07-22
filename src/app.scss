@@ -411,11 +411,11 @@ html {
                 transition: all .5s;
 
 
-                &:hover {
-                    scale: 1.1;
-                    border-radius: 20px;
-                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-                }
+                // &:hover {
+                //     scale: 1.1;
+                //     border-radius: 20px;
+                //     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                // }
 
                 img {
                     width: 260px;
@@ -976,11 +976,11 @@ html {
 }
 
 @keyframes scaleX {
-    0% {
-        opacity: 0;
-        scale: .0;
+    // 0% {
+    //     opacity: 0;
+    //     scale: .0;
 
-    }
+    // }
 
     25% {
         opacity: .7;
