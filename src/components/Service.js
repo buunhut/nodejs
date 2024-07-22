@@ -40,7 +40,7 @@ const Service = () => {
             <li>HTML5/CSS3</li>
             <li>JavaScript</li>
             <li>ReactJs</li>
-            <li>Redux/@reduxjs/toolkit</li>
+            <li>Redux</li>
             <li>Axios</li>
           </ul>
           <div className="bgc">

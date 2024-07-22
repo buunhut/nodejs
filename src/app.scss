@@ -449,18 +449,19 @@ html {
 
         .content {
             display: flex;
-            gap: 40px;
+            gap: 20px;
             flex-wrap: wrap;
             // justify-content: space-around;
             // padding: 5px;
 
 
             .fontend {
-                width: 100%;
+                width: calc(50% - 10px);
                 background-color: white;
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-                padding: 50px;
+                padding: 20px;
                 position: relative;
+                overflow: hidden;
 
                 h2 {
                     color: rgb(242, 112, 13);
@@ -474,7 +475,7 @@ html {
                 }
 
                 ul {
-                    margin: 10px 0 0 40px;
+                    margin: 10px 0 0 37px;
                     position: relative;
                     z-index: 2;
 
@@ -500,7 +501,7 @@ html {
 
                     i {
                         color: rgba(240, 245, 255, 0.8);
-                        font-size: 280px;
+                        font-size: 160px;
                         animation: moveX 3s infinite;
 
                     }
@@ -509,13 +510,15 @@ html {
             }
 
             .backend {
-                width: 100%;
+                width: calc(50% - 10px);
                 background-color: white;
 
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-                padding: 50px;
+                padding: 20px;
 
                 position: relative;
+                overflow: hidden;
+
 
                 h2 {
                     color: rgb(242, 112, 13);
@@ -529,7 +532,7 @@ html {
                 }
 
                 ul {
-                    margin: 10px 0 0 40px;
+                    margin: 10px 0 0 37px;
                     position: relative;
                     z-index: 2;
 
@@ -556,7 +559,7 @@ html {
 
                     i {
                         color: rgba(240, 245, 255, 0.8);
-                        font-size: 280px;
+                        font-size: 160px;
                         animation: moveX 3s infinite;
 
 
@@ -1012,7 +1015,8 @@ html {
 
                 .fontend,
                 .backend {
-                    padding: 20px;
+                    padding: 10px;
+                    width: 100%;
                 }
 
                 .moveFX {
