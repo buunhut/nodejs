@@ -16,6 +16,13 @@ html {
 
     #home {
         .content {
+            .homeIcon {
+                i {
+                    color: rgb(60, 60, 60);
+
+                }
+            }
+
             .homeItem {
                 ul {
                     li {
@@ -365,7 +372,7 @@ html {
                     color: rgb(242, 112, 13);
 
                     i {
-                        font-size: 100px;
+                        font-size: 130px;
                     }
 
                 }
