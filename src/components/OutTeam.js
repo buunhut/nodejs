@@ -11,7 +11,7 @@ const OutTeam = () => {
       </h1>
       <div className="content">
         {listOurTeams?.map((item, index) => {
-          return <Team item={item} key={index} />;
+          return <Team item={item} index={index} key={index} />;
         })}
       </div>
       <button type="button">

@@ -1,16 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const Team = ({ item }) => {
+const Team = ({ item, index }) => {
   const [visible, setVisible] = useState(false);
   const ref = useRef(null);
 
   const { name, gitHub, faceBook, email, phone, img, position } = item;
 
+  const check = index / 2;
+
+  console.log(check);
+
   useEffect(() => {
     //lăn chuột
     const handleScroll = () => {
       const targetPosition = ref.current.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight - 500; // Điều kiện có thể thay đổi tại đây
+      const screenPosition = window.innerHeight - 300; // Điều kiện có thể thay đổi tại đây
 
       if (targetPosition < screenPosition) {
         setVisible(true);
@@ -28,7 +32,16 @@ const Team = ({ item }) => {
   }, []);
 
   return (
-    <div className={visible ? "team scaleX" : "team"} ref={ref}>
+    <div
+      className={
+        visible
+          ? check === 0 || check === 1
+            ? "team scaleY"
+            : "team scaleY"
+          : "team"
+      }
+      ref={ref}
+    >
       <img src={`/img/${img}`} />
       <h3>{name}</h3>
       <p>{position}</p>

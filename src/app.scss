@@ -428,20 +428,22 @@ html {
                 }
             }
 
-            .moveFX {
-                animation: moveFX;
-                animation-duration: 2s;
-            }
-
-            .moveLFX {
-                animation: moveLFX;
-                animation-duration: 2s;
-            }
 
 
         }
 
     }
+
+    .moveFX {
+        animation: moveFX;
+        animation-duration: 1s;
+    }
+
+    .moveLFX {
+        animation: moveLFX;
+        animation-duration: 1s;
+    }
+
 
     #ourTeam {
         padding: 100px;
@@ -751,7 +753,12 @@ html {
     }
 
     .scaleX {
-        animation: scaleX 3s;
+        animation: scaleX 2s;
+
+    }
+
+    .scaleY {
+        animation: scaleY 2s;
 
     }
 }
@@ -1038,27 +1045,51 @@ html {
 }
 
 @keyframes scaleX {
-    // 0% {
-    //     opacity: 0;
-    //     scale: .0;
-
-    // }
 
     0% {
-        opacity: .7;
-        scale: 1.1;
+        opacity: 0;
+        scale: .5;
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
     50% {
-        opacity: .1;
-        scale: .2;
+        opacity: .5;
+        scale: 1.1;
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
 
     }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+
+    }
+
+
+
+}
+
+@keyframes scaleY {
+    0% {
+        opacity: 1;
+        scale: 1.1;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+
+    }
+
+    50% {
+        opacity: .5;
+        scale: .5;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+
 
     100% {
         opacity: 1;
