@@ -1,73 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
+import Team from "./Team";
 
 const OutTeam = () => {
-  const [visible, setVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    //lăn chuột
-    const handleScroll = () => {
-      const targetPosition = ref.current.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight - 100; // Điều kiện có thể thay đổi tại đây
-
-      if (targetPosition < screenPosition) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const { listOurTeams } = useSelector((state) => state.dataSlice);
   return (
-    <div id="ourTeam" ref={ref}>
+    <div id="ourTeam">
       <h1>
         <i className="fa-solid fa-users"></i> Our teams
       </h1>
       <div className="content">
-        <div className={visible ? "team scaleX" : "team"}>
-          <img src="./img/nhut.jpg" alt="hình" />
-          <h3>Trương Bửu Nhựt</h3>
-          <p>Web developer</p>
-          <div className="button">
-            <a href="https://facebook.com/buunhut">
-              <i className="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://github.com/buunhut">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="mailto:nhut.nta@gmail.com">
-              <i className="fa-solid fa-envelope"></i>
-            </a>
-            <a href="tel:+84909240886">
-              <i className="fa-solid fa-phone"></i>
-            </a>
-          </div>
-        </div>
-        <div className={visible ? "team scaleX" : "team"}>
-          <img src="./img/tan.jpg" alt="hình" />
-          <h3>Nguyễn Đức Tấn</h3>
-          <p>Web developer</p>
-          <div className="button">
-            <a href="https://facebook.com/nguyen.duc.tan998">
-              <i className="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://github.com/ductandev">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="mailto:nguyenductan998@gmail.com">
-              <i className="fa-solid fa-envelope"></i>
-            </a>
-            <a href="tel:+84931238660">
-              <i className="fa-solid fa-phone"></i>
-            </a>
-          </div>
-        </div>
+        {listOurTeams?.map((item, index) => {
+          return <Team item={item} key={index} />;
+        })}
       </div>
       <button type="button">
         <a href="tel:+84909240886">
