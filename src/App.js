@@ -3,6 +3,7 @@ import "./app.scss";
 import Service from "./components/Service";
 import Contact from "./components/Contact";
 import OutTeam from "./components/OutTeam";
+import BackToTop from "./components/BackToTop";
 
 const App = () => {
   const [megaMenu, setMegaMenu] = useState(false);
@@ -98,6 +99,7 @@ const App = () => {
       <Service />
       <OutTeam />
       <Contact />
+      <BackToTop />
       <footer>
         <span>
           <a href="https://nodejs.edu.vn">nodejs.edu.vn</a> - Copyright 2024
