@@ -32,16 +32,16 @@ const initialState = {
       img: "phu.jpeg",
       position: "web developer",
     },
-    // {
-    //   id: 4,
-    //   name: "nguyễn đức tấn",
-    //   gitHub: "https://github.com/ductandev",
-    //   faceBook: "https://facebook.com/nguyen.duc.tan998",
-    //   email: "nguyenductan998@gmail.com",
-    //   phone: "+84931238660",
-    //   img: "tan.jpg",
-    //   position: "web developer",
-    // },
+    {
+      id: 4,
+      name: "Lâm Diễm Kiều",
+      gitHub: "https://github.com/KieuLam0603",
+      faceBook: "#",
+      email: "kieulam6396@gmail.com",
+      phone: "+84969989937",
+      img: "kieu.jpg",
+      position: "web developer",
+    },
   ],
 };
 
