@@ -34,7 +34,7 @@ const initialState = {
     },
     {
       id: 4,
-      name: "Lâm Diễm Kiều",
+      name: "lâm diễm kiều",
       gitHub: "https://github.com/KieuLam0603",
       faceBook: "#",
       email: "kieulam6396@gmail.com",
