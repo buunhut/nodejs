@@ -4,6 +4,16 @@ const initialState = {
   listOurTeams: [
     {
       id: 1,
+      name: "nguyễn thanh phong",
+      gitHub: "#",
+      faceBook: "https://www.facebook.com/bryannguyenvn",
+      email: "bryannguyenvn@gmail.com",
+      phone: "+84919984877",
+      img: "phong.jpg",
+      position: "CEO",
+    },
+    {
+      id: 2,
       name: "trương bửu nhựt",
       gitHub: "https://github.com/buunhut",
       faceBook: "https://facebook.com/buunhut",
@@ -13,7 +23,7 @@ const initialState = {
       position: "web developer",
     },
     {
-      id: 2,
+      id: 3,
       name: "nguyễn đức tấn",
       gitHub: "https://github.com/ductandev",
       faceBook: "https://facebook.com/nguyen.duc.tan998",
@@ -23,7 +33,7 @@ const initialState = {
       position: "web developer",
     },
     {
-      id: 3,
+      id: 4,
       name: "phan tấn phú",
       gitHub: "https://github.com/tanphudev",
       faceBook: "https://faceboo.com/buunhut",
@@ -33,7 +43,7 @@ const initialState = {
       position: "web developer",
     },
     {
-      id: 4,
+      id: 5,
       name: "lâm diễm kiều",
       gitHub: "https://github.com/KieuLam0603",
       faceBook: "#",
