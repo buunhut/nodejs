@@ -13,6 +13,10 @@ html {
 #container.dark {
     background-color: rgb(50, 50, 50);
 
+    .megaMenu {
+        background-color: rgb(35, 35, 35);
+    }
+
 
     #home {
         .content {
@@ -248,9 +252,9 @@ html {
         right: 0;
         bottom: 0;
         background-color: rgb(242, 112, 13);
-        z-index: 1999;
+        z-index: 3000;
         height: 100vh;
-        transition: all .5s;
+        transition: all .3s;
         transform: translateY(100%);
         // display: flex;
         // align-items: center;
