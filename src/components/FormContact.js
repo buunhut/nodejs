@@ -17,7 +17,7 @@ const FormContact = () => {
   const postData = async (data) => {
     await axios({
       method: "post",
-      url: "https://api.nodejs.edu.vn/nodejs",
+      url: "https://api.nodejs.edu.vn/nodejs/contact",
       data,
     })
       .then((res) => {

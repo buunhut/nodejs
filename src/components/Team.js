@@ -44,18 +44,26 @@ const Team = ({ item, index }) => {
       <h3>{name}</h3>
       <p>{position}</p>
       <div className="button">
-        <a href={faceBook}>
-          <i className="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href={gitHub}>
-          <i className="fa-brands fa-github"></i>
-        </a>
-        <a href={`mailto:${email}`}>
-          <i className="fa-solid fa-envelope"></i>
-        </a>
-        <a href={`tel:${phone}`}>
-          <i className="fa-solid fa-phone"></i>
-        </a>
+        {faceBook && (
+          <a href={faceBook}>
+            <i className="fa-brands fa-facebook-f"></i>
+          </a>
+        )}
+        {gitHub && (
+          <a href={gitHub}>
+            <i className="fa-brands fa-github"></i>
+          </a>
+        )}
+        {email && (
+          <a href={`mailto:${email}`}>
+            <i className="fa-solid fa-envelope"></i>
+          </a>
+        )}
+        {phone && (
+          <a href={`tel:${phone}`}>
+            <i className="fa-solid fa-phone"></i>
+          </a>
+        )}
       </div>
     </div>
   );
