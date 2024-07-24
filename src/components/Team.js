@@ -40,7 +40,7 @@ const Team = ({ item, index }) => {
       }
       ref={ref}
     >
-      <img src={`/img/${img}`} />
+      <img src={`https://api.nodejs.edu.vn/${img}`} />
       <h3>{name}</h3>
       <p>{position}</p>
       <div className="button">
