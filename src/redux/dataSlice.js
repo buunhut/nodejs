@@ -46,7 +46,7 @@ const initialState = {
       id: 5,
       name: "lâm diễm kiều",
       gitHub: "https://github.com/KieuLam0603",
-      faceBook: "#",
+      faceBook: "https://www.facebook.com/profile.php?id=100022299992969",
       email: "kieulam6396@gmail.com",
       phone: "+84969989937",
       img: "kieu.jpg",
