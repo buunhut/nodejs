@@ -7,6 +7,9 @@ import BackToTop from "./components/BackToTop";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
+import Otp from "./components/Otp";
+import Test from "./components/Test";
+import Chat from "./components/Chat";
 
 const App = () => {
   const [dark, setDark] = useState(false);
@@ -17,6 +20,9 @@ const App = () => {
       <Home />
       <Service />
       <OutTeam />
+      {/* <Otp /> */}
+      {/* <Test /> */}
+      <Chat />
       <Contact />
       <BackToTop />
       <Footer />

@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FormContact from "./FormContact";
+import axios from "axios";
+import moment from "moment";
 
 const Contact = () => {
+  const [listContact, setListContact] = useState([]);
+  const getContact = async () => {
+    const res = await axios({
+      method: "get",
+      url: "https://api.nodejs.edu.vn/nodejs/contact",
+    });
+    const { statusCode, content } = res.data;
+    if (statusCode === 200) {
+      setListContact(content);
+    }
+  };
+  useEffect(() => {
+    getContact();
+  }, []);
   return (
     <div id="contact">
       <FormContact />
