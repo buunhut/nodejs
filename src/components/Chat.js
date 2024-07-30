@@ -80,8 +80,7 @@ const Chat = () => {
                     ) : (
                       <i className="fa-solid fa-user-secret"></i>
                     )}
-                  </span>
-                  {" : "}
+                  </span>{" "}
                   {text}
                 </p>
               </div>
