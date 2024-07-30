@@ -111,9 +111,14 @@ html {
             .textMessage {
                 background-color: transparent;
 
-                p {
-                    color: rgb(235, 235, 235);
+                .text {
 
+                    p {
+                        background-color: rgb(60, 60, 60);
+                        color: rgb(235, 235, 235);
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+                    }
                 }
             }
 
@@ -781,8 +786,30 @@ html {
                 margin-bottom: 20px;
                 padding: 10px;
                 background-color: whitesmoke;
-                height: calc(300px);
+                height: 300px;
                 overflow-y: scroll;
+                // display: flex;
+                // flex-direction: column;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .text {
+                    display: flex;
+
+
+
+                    p {
+                        padding: 6px 12px;
+                        display: inline;
+                        margin-bottom: 10px;
+                        background-color: rgb(240, 240, 240);
+                        border-radius: 5px;
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    }
+                }
+
             }
 
             form {

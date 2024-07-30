@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 
 const SOCKET_SERVER_URL = "https://api.nodejs.edu.vn";
@@ -42,25 +42,49 @@ const Chat = () => {
     setMessage("");
   };
 
+  const chatContainerRef = useRef(null);
+
+  const scrollToBottom = () => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({
+        top: chatContainerRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [sendMessage]);
+
   return (
     <div id="chatForm">
       <h1>Chat form ({connected.length?.toLocaleString()})</h1>
 
       <div className="content">
-        <div className="textMessage">
+        <div className="textMessage" ref={chatContainerRef}>
           {content?.map((item, index) => {
             const { id, text } = item;
             return (
-              <p
+              <div
                 key={index}
-                style={{ textAlign: id === myId ? "right" : "left" }}
+                className="text"
+                style={{
+                  justifyContent: id === myId ? "flex-end" : "flex-start",
+                }}
               >
-                <span style={{ color: "silver" }}>
-                  {id === myId ? "You" : id}
-                </span>
-                {" : "}
-                {text}
-              </p>
+                <p>
+                  <span style={{ color: "silver" }}>
+                    {id === myId ? (
+                      "You"
+                    ) : (
+                      <i className="fa-solid fa-user-secret"></i>
+                    )}
+                  </span>
+                  {" : "}
+                  {text}
+                </p>
+              </div>
             );
           })}
         </div>
