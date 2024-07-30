@@ -25,7 +25,7 @@ const Chat = () => {
     });
 
     socket.on("disconnect", () => {
-      console.log("Disconnected from server");
+      //   console.log("Disconnected from server");
     });
 
     setSocket(socket);
@@ -56,6 +56,13 @@ const Chat = () => {
   useEffect(() => {
     scrollToBottom();
   }, [sendMessage]);
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      sendMessage();
+    }
+  };
 
   return (
     <div id="chatForm">
@@ -91,9 +98,10 @@ const Chat = () => {
         <form>
           <textarea
             type="text"
-            placeholder="Text..."
+            placeholder="Type a message..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            onKeyDown={handleKeyPress}
           />
           <button type="button" onClick={sendMessage}>
             send
