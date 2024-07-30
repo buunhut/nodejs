@@ -87,7 +87,7 @@ const Chat = () => {
                 <p>
                   <span style={{ color: "silver" }}>
                     {id === myId ? (
-                      "You"
+                      <i className="fa-solid fa-user"></i>
                     ) : (
                       <i className="fa-solid fa-user-secret"></i>
                     )}
