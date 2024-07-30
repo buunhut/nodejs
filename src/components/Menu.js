@@ -48,6 +48,9 @@ const Menu = ({ dark, setDark }) => {
             <a href="#ourTeam">Our Teams</a>
           </li>
           <li>
+            <a href="#chatForm">Chat</a>
+          </li>
+          <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -74,6 +77,9 @@ const Menu = ({ dark, setDark }) => {
           </li>
           <li onClick={() => setMegaMenu(false)}>
             <a href="#ourTeam">Our Teams</a>
+          </li>
+          <li onClick={() => setMegaMenu(false)}>
+            <a href="#chatForm">Chat</a>
           </li>
           <li onClick={() => setMegaMenu(false)}>
             <a href="#contact">Contact</a>
