@@ -792,6 +792,11 @@ html {
                 // display: flex;
                 // flex-direction: column;
 
+                -ms-overflow-style: none;
+                /* IE và Edge */
+                scrollbar-width: none;
+                /* Firefox */
+
                 &::-webkit-scrollbar {
                     display: none;
                 }

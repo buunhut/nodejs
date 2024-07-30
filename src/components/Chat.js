@@ -59,8 +59,12 @@ const Chat = () => {
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
-      event.preventDefault();
-      sendMessage();
+      if (event.shiftKey) {
+        setMessage(message + "\n");
+      } else {
+        event.preventDefault();
+        sendMessage();
+      }
     }
   };
 
@@ -101,7 +105,7 @@ const Chat = () => {
             placeholder="Type a message..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            onKeyDown={handleKeyPress}
+            onKeyUp={handleKeyPress}
           />
           <button type="button" onClick={sendMessage}>
             send
