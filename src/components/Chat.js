@@ -59,7 +59,7 @@ const Chat = () => {
 
   return (
     <div id="chatForm">
-      <h1>Chat form ({connected.length?.toLocaleString()})</h1>
+      <h1>Chat room ({connected.length?.toLocaleString()})</h1>
 
       <div className="content">
         <div className="textMessage" ref={chatContainerRef}>
