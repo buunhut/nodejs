@@ -809,10 +809,19 @@ html {
                     p {
                         padding: 6px 12px;
                         display: inline;
+                        max-width: 60%;
                         margin-bottom: 10px;
                         background-color: rgb(240, 240, 240);
                         border-radius: 5px;
                         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+                        span {
+
+                            i {
+                                font-size: 14px;
+                                // display: block;
+                            }
+                        }
                     }
                 }
 
