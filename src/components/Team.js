@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Team = ({ item, index }) => {
   const [visible, setVisible] = useState(false);
   const ref = useRef(null);
 
-  const { name, gitHub, faceBook, email, phone, img, position } = item;
+  const { id, name, gitHub, faceBook, email, phone, img, position } = item;
 
   const check = index / 2;
 
@@ -29,6 +30,13 @@ const Team = ({ item, index }) => {
     };
   }, []);
 
+  const navigate = useNavigate();
+
+  const handleCv = (id) => {
+    if (id === 2) {
+      navigate("/buunhut");
+    }
+  };
   return (
     <div
       className={
@@ -40,7 +48,12 @@ const Team = ({ item, index }) => {
       }
       ref={ref}
     >
-      <img src={`https://api.nodejs.edu.vn/${img}`} />
+      <img
+        src={`https://api.nodejs.edu.vn/${img}`}
+        onClick={() => {
+          handleCv(id);
+        }}
+      />
       <h3>{name}</h3>
       <p>{position}</p>
       <div className="button">

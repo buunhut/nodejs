@@ -1,32 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import "./app.scss";
-import Service from "./components/Service";
-import Contact from "./components/Contact";
-import OutTeam from "./components/OutTeam";
-import BackToTop from "./components/BackToTop";
-import Home from "./components/Home";
-import Menu from "./components/Menu";
-import Footer from "./components/Footer";
-import Otp from "./components/Otp";
-import Test from "./components/Test";
-import Chat from "./components/Chat";
+import HomePage from "./pages/HomePage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Cv from "./pages/Cv";
 
 const App = () => {
-  const [dark, setDark] = useState(false);
-
   return (
-    <div id="container" className={dark ? "dark" : null}>
-      <Menu dark={dark} setDark={setDark} />
-      <Home />
-      <Service />
-      <OutTeam />
-      {/* <Otp /> */}
-      {/* <Test /> */}
-      <Chat />
-      <Contact />
-      <BackToTop />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/buunhut" element={<Cv />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
