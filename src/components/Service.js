@@ -42,6 +42,7 @@ const Service = () => {
             <li>ReactJs</li>
             <li>Redux</li>
             <li>Axios</li>
+            <li>gitHub</li>
           </ul>
           <div className="bgc">
             <i className="fa-solid fa-display"></i>
@@ -55,6 +56,7 @@ const Service = () => {
             <li>Resfull API</li>
             <li>Websocket</li>
             <li>NestJS</li>
+            <li>Swagger</li>
             <li>JWT</li>
             <li>Prisma</li>
             <li>MySQL</li>
