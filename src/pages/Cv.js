@@ -277,12 +277,11 @@ const Cv = () => {
                       <b>1/ My CV</b> <i>(Personal use).</i>
                       <br />
                       <b>User interface:</b> <br />+ Show infomation, dark
-                      theme, light theme, English, Vietnamese, Print CV.{" "}
-                      <br></br>+ Responsive web, amination css. Only code
-                      fontend. <br />
+                      theme, light theme, English, Print CV. <br></br>+
+                      Responsive web, amination css. Only code fontend. <br />
                       Link:{" "}
-                      <a href="https://nodejs.edu.vn" className="link">
-                        https://nodejs.edu.vn
+                      <a href="https://nodejs.edu.vn/buunhut" className="link">
+                        https://nodejs.edu.vn/buunhut
                       </a>
                     </h4>
                   </div>
