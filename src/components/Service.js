@@ -38,9 +38,9 @@ const Service = () => {
           <ul>
             <li>UI/UX</li>
             <li>HTML5/CSS3</li>
-            <li>JavaScript</li>
+            <li>JavaScript/TypyScript</li>
             <li>ReactJs</li>
-            <li>Redux</li>
+            <li>Redux, @Reduxjs/toolkit</li>
             <li>Axios</li>
             <li>gitHub</li>
           </ul>
