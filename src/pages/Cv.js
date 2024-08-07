@@ -33,8 +33,10 @@ const Cv = () => {
   };
 
   useEffect(() => {
+    handleBackToTop();
     const theme = JSON.parse(localStorage.getItem("theme"));
     setDark(theme);
+
     if (theme) {
       document.body.classList.add("dark");
     } else {
